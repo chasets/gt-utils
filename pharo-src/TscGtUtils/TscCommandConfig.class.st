@@ -5,11 +5,11 @@ Class {
 }
 
 { #category : #accessing }
-TscCommandConfig class >> environmentVars: aDict [ 
+TscCommandConfig class >> environmentVars [
 	self subclassResponsibility
 ]
 
 { #category : #accessing }
-TscCommandConfig class >> workingDirectory: aFilepath [ 
+TscCommandConfig class >> workingDirectory [
 	self subclassResponsibility
 ]
