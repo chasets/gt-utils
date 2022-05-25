@@ -22,5 +22,5 @@ process errorBlock: [ :proc | self error: 'Failed to run command' ].
 
 { #category : #accessing }
 TscCommand >> commandPath [
-	self subclassResponsibility
+	^ '/usr/local/bin/aws'
 ]
