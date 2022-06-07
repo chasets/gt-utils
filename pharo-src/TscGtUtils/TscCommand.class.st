@@ -8,7 +8,7 @@ Class {
 TscCommand >> cmd: commandList [ 	
 	| process output |
 	process := GtSubprocessWithInMemoryOutput new
-	addAllEnvVariablesFromParentWithoutOverride;
+	"addAllEnvVariablesFromParentWithoutOverride;"
 	"put vars from CommandConfig subclass here"
 	"environmentAt: 'PATH' put: (SqlRunnerEnvironment path);"
 	"workingDirectory: (SqlRunnerEnvironment workingDirectory);"
@@ -22,5 +22,5 @@ process errorBlock: [ :proc | self error: 'Failed to run command' ].
 
 { #category : #accessing }
 TscCommand >> commandPath [
-	^ '/usr/local/bin/aws'
+	self subclassResponsibility
 ]
