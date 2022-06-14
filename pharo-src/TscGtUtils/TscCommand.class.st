@@ -17,7 +17,7 @@ TscCommand >> cmd: commandList [
 process errorBlock: [ :proc | self error: 'Failed to run command' ].
 	process runAndWait.
 	output := process stdout.
-	^ output
+	^ output trim
 ]
 
 { #category : #accessing }
