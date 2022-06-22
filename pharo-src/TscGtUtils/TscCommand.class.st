@@ -32,7 +32,6 @@ TscCommand >> commandPath [
 { #category : #accessing }
 TscCommand >> workingDirectory [ 
 	workingDirectory ifNil: [self workingDirectory: FileLocator home].
-	^ workingDirectory
 ]
 
 { #category : #accessing }
