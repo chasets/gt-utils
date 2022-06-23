@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfGtUtils,
+	#name : #BaselineOfTscGtUtils,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfGtUtils
+	#category : #BaselineOfTscGtUtils
 }
 
 { #category : #baseline }
-BaselineOfGtUtils >> baseline: spec [
+BaselineOfTscGtUtils >> baseline: spec [
 	<baseline>
 	spec for: #'common' do: [
 		spec 
